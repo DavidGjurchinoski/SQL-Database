@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Homework_3", "Homework_3\Homework_3.ssmssqlproj", "{4BE4EB31-522C-43D6-86E4-19A28F0F61F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BE4EB31-522C-43D6-86E4-19A28F0F61F9}.Default|Default.ActiveCfg = Default
+		{6BE5199C-77C3-4F0E-BD5A-A12193AD1814}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF532CCB-5F17-403D-BC99-2B3FABBB2581}
+	EndGlobalSection
+EndGlobal

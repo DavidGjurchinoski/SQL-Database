@@ -303,3 +303,26 @@ DELETE FROM [Product] WHERE Id = 4;
 
 INSERT INTO [Product] (Id, Code, [Name], [Description], [Weight], Price, Cost) 
 	   VALUES (100000, 'curl', 'Crunchy', 'CRIDNSAJDN', 0.00, 30.00, 20.00);
+
+
+---Practice 01---
+
+ALTER TABLE [Order]
+ADD CONSTRAINT FK_BusinessEntityId
+FOREIGN KEY (BusinessEntityId) REFERENCES [BusinessEntity](Id);
+
+SELECT [Customer].[Name] AS cn, [Product].[Name] FROM [Customer]
+CROSS JOIN [Product]
+
+SELECT * FROM [BusinessEntity]
+JOIN [Order] ON [Order].BusinessEntityId = [BusinessEntity].Id
+
+SELECT * FROM [BusinessEntity]
+LEFT OUTER JOIN [Order] ON [Order].BusinessEntityId = BusinessEntity.Id
+WHERE [Order].Id IS NULL
+
+SELECT [BusinessEntity].Name, SUM(TotalPrice) AS TotalPrice FROM [Order]
+JOIN [BusinessEntity] ON [Order].BusinessEntityId = [BusinessEntity].Id
+GROUP BY [BusinessEntity].Name
+
+
